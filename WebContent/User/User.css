@@ -1,0 +1,128 @@
+@charset "UTF-8";
+body,p{
+	margin: 0;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}  
+
+input{
+	margin: 0;
+	width: 0;
+}
+
+.box{
+	border: 1px solid #999;
+	overflow: hidden;
+}
+
+.nav{
+	width:100%;
+	margin-left: -1px;
+	font: 14px "微软雅黑";
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+
+.navI{
+	float: left;
+	width: 33.333%;
+	box-sizing: border-box;
+}
+
+.navI-tit{
+	width:100%;
+	display:block;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	border-left: 1px solid #cecece;
+	border-bottom: 1px solid #cecece;
+}
+
+.navI-txt{
+	position:relative;
+	width: 100vw;
+	height:100vh;
+	line-height: 2;
+	background:#fff;
+}
+
+.teacherInfo{
+	width: 90vw;
+	height:280px;
+	border:0.8px solid #383838;
+	margin-left:5vw;
+	margin-top:5vw;
+	border-radius:10px;
+		
+}
+
+.table{
+	width: 80vw;
+	margin-top:20px;
+	table-layout:fixed;
+	border-collapse:collapse;
+}
+
+.Info_text1{
+	width:17vw;
+	font-size:15px;
+	padding-left:5vw;
+	word-break:break-word;
+	color:grey;
+}
+
+.Info_text2{
+	width:17vw;
+	font-size:15px;
+	word-break:break-word;
+	color:grey;
+}
+
+.rewardTitle{
+	margin-left:6vw;
+	font-size:20px;
+	color:lightskyblue;
+}
+
+.rewardInfo{
+	width:80vw;
+	height:30%;
+	margin-left:5vw;
+	border:0.6px solid #383838;
+	border-radius:10px;
+}
+
+.add{
+	width:30px;
+	height:30px;
+	margin-top:20px;
+	margin-left:6vw;
+}
+
+.upload{
+	width:90vw;
+	height:40vh;
+	border:0.8px solid #383838;
+	margin-left:5vw;
+	margin-top:10px;
+	border-radius:10px;
+}
+
+.ml1{
+	margin-left: -100%;
+}
+
+.ml2{
+	margin-left: -200%;
+}
+/*重点代码*/
+.navI-radio{display:none;}
+.navI-radio:checked + .navI-tit{background:#fff;border-bottom:none;}
+.navI-radio:checked ~ .navI-txt{z-index:1;}
+
+
