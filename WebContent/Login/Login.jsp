@@ -49,7 +49,7 @@
 					<img class="VerifiPic" alt="无法显示验证码" src="/OurWeb/Images/VerificationCode.jsp" 
 					style="cursor:pointer;" onclick="Refresh(this)">
 				</div><br>
-				用户：<input class="Check" type="radio" checked="checked" name="sex" value="User">&nbsp;
+				教师：<input class="Check" type="radio" checked="checked" name="sex" value="Teacher">&nbsp;
 				管理员：<input class="Check" type="radio" name="sex" value="Administrator"><br>
 				<br>
 				<input class="EnterButton" name="Submit" type="Submit" value="登入">

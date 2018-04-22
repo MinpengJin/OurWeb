@@ -34,11 +34,17 @@ public class Misjudgment extends HttpServlet {
 		String Error = "";
 		HttpSession session = request.getSession();
 		Error = (String) session.getAttribute("Error");
-		if(Error.equals("ErrorOfPass")) {
-			Info = "用户名或密码错误，请重新登入！";
+		if(Error.equals("NullError")) {
+			Info = "用户名或密码不能为空，请重新登入！";
 			request.setAttribute("Info", Info);
 		}else if(Error.equals("ErrorOfVeri")) {
 			Info = "验证码错误，请重新登入！";
+			request.setAttribute("Info", Info);
+		}else if(Error.equals("invalidUserName")) {
+			Info = "用户名错误，请重新输入!";
+			request.setAttribute("Info", Info);
+		}else if(Error.equals("invalidPassword")) {
+			Info = "密码错误，请重新输入!";
 			request.setAttribute("Info", Info);
 		}
 		RequestDispatcher rd = request.getRequestDispatcher("/Login/Login.jsp");
