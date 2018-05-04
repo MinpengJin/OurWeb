@@ -12,7 +12,7 @@
 		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 		<meta http-equiv="description" content="This is my page">
 				
-		<link rel="stylesheet" type="text/css" href="/OurWeb/Login/Login.css">
+		<link rel="stylesheet" type="text/css" href="/OurWeb/Css/Login.css">
 		<title>教师考评系统</title>
 		
 		<script>
@@ -31,7 +31,7 @@
 		</div>
 		<hr>
 		<div class="Overall">
-			<form class="Form" name="login" method="POST" action="/OurWeb/LoginHandle">
+			<form class="Form" name="login" method="POST" action="/OurWeb/LoginServlet">
 				<font style="color:red">
 				<%
 				if(request.getAttribute("Info")!=null&&request.getAttribute("Info")!=""){
