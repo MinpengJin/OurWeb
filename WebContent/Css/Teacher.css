@@ -1,0 +1,569 @@
+@charset "UTF-8";
+body,p{
+	margin: 0;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}  
+
+input{
+	margin: 0;
+	width: 0;
+}
+
+.box{
+	border: 1px solid #999;
+	overflow: hidden;
+}
+
+.nav{
+	width:100%;
+	margin-left: -1px;
+	font: 14px "微软雅黑";
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+
+.navI{
+	float: left;
+	width: 33.333%;
+	box-sizing: border-box;
+}
+
+.navI-tit{
+	width:100%;
+	display:block;
+	line-height: 40px;
+	text-align: center;
+	border-left: 1px solid #cecece;
+	border-bottom: 1px solid #cecece;
+	cursor: pointer;
+}
+
+/*重点代码*/
+.navI-radio{
+	display:none;
+}
+.navI-radio:checked + .navI-tit{
+	background:#fff;
+	border-bottom:none;
+}
+.navI-radio:checked ~ .navI-txt{
+	z-index:1;
+}
+
+
+.navI-txt{
+	padding-top:0vh;
+	position:relative;
+	width: 100vw;
+	height:79vh;
+	background:#fff;
+}
+
+.ml1{
+	padding-top:5vh;
+	margin-left: -100%;
+}
+
+.ml2{
+	padding-top:15vh;
+	margin-left: -200%;
+}
+
+/********考核公告********/
+.background1{
+	width:100vw;
+	height:100vh;	
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-color:white;
+	
+}
+
+.recent{
+	width:70vw;
+	height:20vh;
+	margin-left:15vw;
+	border:0.8px solid #383838;
+	border-radius:10px;
+	margin-top:10vh;
+}
+
+.rec-title{
+	text-align:center;
+	font-size:20px;
+}
+
+.rec-content{
+	height:10vh;
+	margin-left:3vw;
+}
+
+.rec-time{
+	text-align:right;
+	margin-right:3vw;
+}
+
+.history{
+	width:70vw;
+	height:32vh;
+	margin-top:10vh;
+	margin-left:15vw;
+	overflow-y:scroll;
+	border:0.8px solid #383838;
+}
+
+
+.his-title{
+	width:100%;
+	height:5vh;
+	border-bottom:0.8px solid #383838;
+}
+
+.history ul li:nth-child(2n+1){
+	background-color:#f2f2f2;
+} 
+ 
+.p1{
+	width:85%;
+	float:left;
+	text-align:center;
+}
+
+.p2{
+	width:15%;
+	float:left;
+	text-align:center;
+}
+
+.his-content{
+	width:100%;
+	height:10vh;
+	background:#e5eecc;
+	border-bottom:0.8px solid #383838;
+}
+
+
+/********个人成果管理********/
+
+.background2{
+	width: 100vw;
+	height:100vh;
+	background:#fff;
+}
+
+/*教师基本信息*/
+.teacherInfo{
+	width: 90vw;
+	height:18vh;
+	margin-left:5vw;
+	border:0.8px solid #383838;
+	border-radius:10px;
+}
+
+.teacherInfo table{
+	width:100%;
+	height:10vh;
+	border-collapse:collapse;
+}
+
+.teacherInfo td{
+	width:20vw;
+	height:5vh;
+	font-size:15px;
+	word-break:break-word;
+	text-align:left;
+	color:grey;
+}
+
+.first{
+	padding-left:5vw;
+}
+
+/*奖惩信息模块*/
+.rewardInfo{
+	width:90vw;
+	height:15vh;
+	margin-left:5vw;
+	margin-top:5vh;
+	border:0.6px solid #383838;
+	border-radius:10px;
+}
+
+.rewardInfo p{
+	color:black;
+	font-size:20px;
+	text-align:center;
+}
+
+/*成果上传模块*/
+.add img{
+	width:30px;
+	height:30px;
+	margin-top:20px;
+	margin-left:6vw;
+}
+
+.popover {  
+    z-index:9999;  
+    position:relative;  
+    top:-20vh;  
+    left:33vw;  
+    width:80vw;  
+    height:70vh;  
+    margin:-180px 0 0 -330px;  
+    border-radius:10px;  
+    border:solid 2px #666;  
+    background-color:#fff;  
+    display:none;  
+    box-shadow: 0 0 10px #666;  
+} 
+
+.popover-head{
+	width:100%;
+	height:10%;
+	background:#f2f2f2;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+.popover-head p{
+	width:85%;
+	height:4vh;
+	float:left;
+	font-size:20px;
+	color:grey;
+	margin-left:3vw;
+	margin-top:1vh;
+}
+
+.close img{
+	width:20px;
+	height:3vh;
+	margin-left:5vw;
+	margin-top:2vh;
+}
+
+.popover-body{
+	width:100%;
+	height:80%;
+	border-top:1px solid grey;
+}
+
+.popover-body form{
+	width:100%;
+	height:100%;
+}
+
+.popover-body form select{
+	width:15%;
+	height:8%;
+	margin-top:3%;
+	border:solid thin grey;
+}
+
+.label{
+	font-size:15px;
+	font-family:Times New Roman;
+	margin-left:20%;
+}
+.l1{
+	margin-left:10%;
+}
+
+.s{
+	margin-left:5%
+}
+
+.input{
+	width:50%;
+	height:8%;
+	margin-top:3%;	
+	border:solid thin grey;
+	border-radius:5px;
+}
+
+.title{
+	margin-top:3%;	
+}
+
+.thesisNum{
+	width:15%;
+}
+
+.score{
+	width:15%;
+	margin-left:3%;
+	text-align:center;
+}
+
+.popover-body .addThesis{
+	width:10%;
+	height:7%;
+	border:none;
+	background-color:lightskyblue;
+	color:white;
+	border-radius:8px;
+	margin-top:2%;
+	margin-left:85%;
+}
+
+.popover-mask {  
+    z-index: 9998;  
+    position:fixed;  
+    top:0;  
+    left:0;  
+    width:100%;  
+    height:100%;  
+    background:#000;  
+    opacity:0.4;  
+    filter:alpha(opacity=40);  
+    display:none;  
+} 
+
+/*删除确认*/
+.deleteConfirm {  
+    z-index:9999;  
+    position:relative;  
+    top:-5vh;  
+    left:55vw;  
+    width:40vw;  
+    height:30vh;  
+    margin:-180px 0 0 -330px;  
+    border-radius:10px;  
+    border:solid 2px #666;  
+    background-color:#fff;  
+    display:none;  
+    box-shadow: 0 0 10px #666;  
+} 
+
+.confirm-head{
+	border-bottom:0.8px solid grey;
+	height:5vh;
+}
+
+.confirm-head p{
+	width:83%;
+	height:4vh;
+	float:left;
+	font-size:20px;
+	color:grey;
+	margin-left:2vw;
+	margin-top:1vh;
+}
+
+.close2 img{
+	width:20px;
+	height:3vh;
+	margin-left:2vw;
+	margin-top:1vh;
+}
+
+.confirm-body{
+	text-algin:center;
+}
+
+.confirm-body label{
+	font-size:15px;
+	font-family:Times New Roman;
+	margin-left:10%;
+	color:grey;
+}
+
+.confirm-body .checkpsw{
+	width:50%;
+	height:5vh;
+	margin-top:6vh;
+	border-radius:5px;
+	border:1px solid black;
+}
+
+.confirm-body .checkbtn{
+	width:15%;
+	height:4vh;
+	margin-left:75%;
+	margin-top:3vh;
+	border-radius:10px;
+	border:none;
+	color:white;
+	background-color:lightskyblue;
+}
+
+.popover-mask2 {  
+    z-index: 9998;  
+    position:fixed;  
+    top:0;  
+    left:0;  
+    width:100%;  
+    height:100%;  
+    background:#000;  
+    opacity:0.4;  
+    filter:alpha(opacity=40);  
+    display:none;  
+} 
+
+
+/*任务列表模块*/
+.upload{
+	width:90vw;
+	height:40vh;
+	border:0.8px solid #383838;
+	margin-left:5vw;
+	margin-top:10px;
+	border-radius:10px;
+}
+
+.table-head{
+	width:100%;
+	color:#000;
+}
+
+.table-head table{
+	border-top:0.8px solid #383838;
+	border-bottom:0.8px solid #383838;
+}
+
+caption{
+	color:black;
+	font-size:20px;
+}
+
+.table-head tr{
+	background:#fff8dc;	
+}
+
+.head{
+	width:10vw;
+	height:5vh;
+	text-align:center;
+	font-size:15px;
+	font-weight:400;
+}
+
+
+.h1{
+	width:30vw;
+}
+
+.h2{
+	width:15vw;
+}
+
+.h3{
+	border-right:none;
+}
+
+.delete img{
+	width:25px;
+	height:25px;
+	margin-top:20px;
+	margin-left:82vw;
+}
+
+.body{
+	width:10vw;
+	height:5vh;
+	border-bottom:0.8px solid #383838;
+	border-right:0.8px solid #383838;
+	word-break:break-word;
+	text-align:center;
+	color:grey;
+}
+
+.b1{
+	width:30vw;
+}
+
+.b2{
+	width:15vw;
+}
+
+.b3{
+	width:8vw;
+	border-right:none;
+}
+
+.table-body{
+	width:100%; 
+	height:25vh;
+	overflow-y:scroll;
+	border-bottom:0.8px solid #383838;
+}  
+
+.table-body table tr:nth-child(2n+1){
+	background-color:#f2f2f2;
+}  
+
+.table-body table input{
+	height:15px;
+	width:15px;
+}
+
+
+/********账号管理********/
+
+.background3{
+	width:100vw;
+	height:100vh;
+	background-color:white;
+}
+
+.changePassword{
+	width:60vw;
+	height:45vh;
+	margin-left:20vw;
+	border:0.6px solid #383838;
+	border-radius:10px;
+	text-align:center;
+	margin-top:3vh;
+}
+
+.signoff{
+	width:5vw;
+	height:3vh;
+	margin-left:75vw;
+	color:white;
+	background-color:red;
+	border:none;
+	border-radius:10px;
+}
+
+.container{
+	width:30vw;
+	height:5vh;
+	margin-top:3vh;
+	border:0.6px solid #383838;
+	border-radius:10px;
+}
+
+.con1{
+	margin-left:20px;
+	text-align:center;
+}
+
+.con2{
+	margin-left:8px;
+}
+
+.con3{
+	margin-left:20px;
+}
+
+.con4{
+	margin-left:8px;
+}
+
+.change{
+	margin-top:3vh;
+	width:15vw;
+	height:6vh;
+	border-radius:10px;
+	border:none;
+	background:lightskyblue;
+	color:white;
+}
+
